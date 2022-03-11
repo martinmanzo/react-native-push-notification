@@ -55,7 +55,7 @@ public class RNReceivedMessageHandler {
             bundle.putString("sound", remoteNotification.getSound());
             bundle.putString("color", remoteNotification.getColor());
             bundle.putString("tag", remoteNotification.getTag());
-            bundle.putString("collapse_key", remoteNotification.getCollapseKey());
+            bundle.putString("collapse_key", message.getCollapseKey());
             
             if(remoteNotification.getIcon() != null) {
               bundle.putString("smallIcon", remoteNotification.getIcon());
